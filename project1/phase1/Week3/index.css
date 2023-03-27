@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+p {
+  font-size: 30px;
+  margin: 80px;
+}
+#box {
+  width: 270px;
+  height: 250px;
+  background-color: rgb(207, 206, 206);
+  border-radius: 15px;
+  margin: 0px 510px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+#btn {
+  margin: 20px 0px;
+  font-size: large;
+  padding: 10px 100px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: gray;
+  color: white;
+  font-weight: bolder;
+}
