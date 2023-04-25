@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MdStarRate } from "react-icons/md";
 import {BsFillBagCheckFill} from "react-icons/bs"
-function Products() {
+function Products({handleClick}) {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(true);

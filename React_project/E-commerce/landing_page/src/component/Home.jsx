@@ -1,6 +1,6 @@
 import React from "react";
 import person from "./bgWoman.jpg";
-function Home() {
+function Home({handleClick}) {
   return (
     <div className="main">
       <div className="sub-main">
@@ -14,6 +14,13 @@ function Home() {
         <div className="btn-div">
           <button className="btn">Shop Now</button>
         </div>
+      </div>
+      <div className="btn-filter">
+        <button onClick={handleClick}>All</button>
+        <button>Men's Clothing</button>
+        <button>Jewerly</button>
+        <button>Electronics</button>
+        <button>Women's Clothing</button>
       </div>
     </div>
   );
