@@ -1,6 +1,13 @@
 import React from "react";
 import person from "./bgWoman.jpg";
-function Home({handleClick}) {
+
+function Home({
+  setAll,
+  setMenCloth,
+  setElectronics,
+  setJewerly,
+  setWomenCloth,
+}) {
   return (
     <div className="main">
       <div className="sub-main">
@@ -16,11 +23,58 @@ function Home({handleClick}) {
         </div>
       </div>
       <div className="btn-filter">
-        <button onClick={handleClick}>All</button>
-        <button>Men's Clothing</button>
-        <button>Jewerly</button>
-        <button>Electronics</button>
-        <button>Women's Clothing</button>
+
+        <button
+          onClick={() => {
+            setAll(true);
+          }}
+        >
+          All
+        </button>
+        <button
+          onClick={() => {
+            setMenCloth(true);
+            setAll(false);
+            setElectronics(false);
+            setWomenCloth(false);
+            setJewerly(false);
+          }}
+        >
+          Men's Clothing
+        </button>
+        <button
+          onClick={() => {
+            setJewerly(true);
+            setMenCloth(false);
+            setAll(false);
+            setElectronics(false);
+            setWomenCloth(false);
+          }}
+        >
+          Jewerly
+        </button>
+        <button
+          onClick={() => {
+            setElectronics(true);
+            setJewerly(false);
+            setMenCloth(false);
+            setAll(false);
+            setWomenCloth(false);
+          }}
+        >
+          Electronics
+        </button>
+        <button
+          onClick={() => {
+            setWomenCloth(true);
+            setJewerly(false);
+            setMenCloth(false);
+            setAll(false);
+            setElectronics(false);
+          }}
+        >
+          Women's Clothing
+        </button>
       </div>
     </div>
   );
