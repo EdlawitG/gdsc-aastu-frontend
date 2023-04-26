@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Todo.css";
 import { FaTrash } from "react-icons/fa";
 // Import the necessary style file here

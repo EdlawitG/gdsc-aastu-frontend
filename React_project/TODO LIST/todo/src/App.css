@@ -1,0 +1,13 @@
+.head{
+  text-align: center;
+  margin: 60px;
+}
+.List{
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  /* padding-bottom: 100px; */
+  border-radius: 10px;
+  background-color: rgb(235, 235, 235);
+  height: fit-content;
+}
